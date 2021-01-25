@@ -1,7 +1,7 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 
-describe('AppComponent', () => {
+describe('App Component', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
@@ -26,6 +26,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('test-sample-angular app is running!');
+    expect(compiled.querySelector('div').textContent).toContain('hello');
   });
 });
